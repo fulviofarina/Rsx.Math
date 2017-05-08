@@ -30,8 +30,8 @@ namespace Rsx.Math
 
     public static Func<double, bool> IsGoodDouble = x =>
     {
-      if (x != null)
-      {
+      //if (x != null)
+      //{
         if (double.IsNaN(x)) return false;
         if (double.IsInfinity(x)) return false;
         if (x < 1E-07)
@@ -42,7 +42,7 @@ namespace Rsx.Math
         {
           return false;
         }
-      }
+      //}
       return true;
     };
 
